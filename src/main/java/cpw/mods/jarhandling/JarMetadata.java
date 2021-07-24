@@ -14,7 +14,7 @@ public interface JarMetadata {
     String version();
     ModuleDescriptor descriptor();
     // ALL from jdk.internal.module.ModulePath.java
-    Pattern DASH_VERSION = Pattern.compile("-([.\\d]+)");
+    Pattern DASH_VERSION = Pattern.compile("[-_]([.\\d]+)");
     Pattern NON_ALPHANUM = Pattern.compile("[^A-Za-z0-9]");
     Pattern REPEATING_DOTS = Pattern.compile("(\\.)(\\1)+");
     Pattern LEADING_DOTS = Pattern.compile("^\\.");
